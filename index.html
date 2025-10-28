@@ -281,6 +281,10 @@
           <h2>📱 Perangkat Lunak</h2>
           <p>Pelajari software komputer</p>
         </button>
+        <button class="menu-btn" onclick="startGame('logicgates')">
+          <h2>⚡ Gerbang Logika</h2>
+          <p>Kenali gerbang logika dasar</p>
+        </button>
       </div>
 
       <div id="gameArea" class="game-area">
@@ -641,6 +645,140 @@
               "Mengedit foto",
               "Membuat dokumen",
               "Menghitung data",
+            ],
+          },
+        ],
+        logicgates: [
+          {
+            image: "and_gate.png",
+            question: "Gerbang AND - Apa ciri-cirinya?",
+            correct: "Harus semuanya benar baru hasilnya benar",
+            options: [
+              "Harus semuanya benar baru hasilnya benar",
+              "Kalau salah satu benar, hasilnya juga benar",
+              "Jawaban AND yang dibalik",
+              "Menghasilkan 1 kalau kedua input sama",
+            ],
+          },
+          {
+            image: "and_soal.png",
+            question: "Gerbang AND - Input A=1, B=1. Outputnya?",
+            correct: "1 (Benar)",
+            options: [
+              "1 (Benar)",
+              "0 (Salah)",
+              "Tergantung kondisi",
+              "Tidak ada output",
+            ],
+          },
+          {
+            image: "or_gate.png",
+            question: "Gerbang OR - Apa ciri-cirinya?",
+            correct: "Kalau salah satu benar, hasilnya juga benar",
+            options: [
+              "Kalau salah satu benar, hasilnya juga benar",
+              "Harus semuanya benar baru hasilnya benar",
+              "Jawaban OR yang dibalik",
+              "Hanya salah satu input yang benar",
+            ],
+          },
+          {
+            image: "or_soal.png",
+            question: "Gerbang OR - Input A=1, B=0. Outputnya?",
+            correct: "1 (Benar)",
+            options: [
+              "1 (Benar)",
+              "0 (Salah)",
+              "Tergantung kondisi",
+              "Tidak ada output",
+            ],
+          },
+          {
+            image: "not_gate.png",
+            question: "Gerbang NOT - Apa fungsinya?",
+            correct: "Membalikkan input (1 jadi 0, 0 jadi 1)",
+            options: [
+              "Membalikkan input (1 jadi 0, 0 jadi 1)",
+              "Menggabungkan dua input",
+              "Membandingkan dua input",
+              "Mengalikan dua input",
+            ],
+          },
+          {
+            image: "nand_gate.png",
+            question: "Gerbang NAND - Apa ciri-cirinya?",
+            correct: "Jawaban AND yang dibalik",
+            options: [
+              "Jawaban AND yang dibalik",
+              "Jawaban OR yang dibalik",
+              "Harus semuanya benar baru hasilnya benar",
+              "Kalau salah satu benar, hasilnya juga benar",
+            ],
+          },
+          {
+            image: "nand_soal.png",
+            question: "Gerbang NAND - Input A=1, B=1. Outputnya?",
+            correct: "0 (Salah)",
+            options: [
+              "0 (Salah)",
+              "1 (Benar)",
+              "Tergantung kondisi",
+              "Tidak ada output",
+            ],
+          },
+          {
+            image: "nor_gate.png",
+            question: "Gerbang NOR - Apa ciri-cirinya?",
+            correct: "Jawaban OR yang dibalik",
+            options: [
+              "Jawaban OR yang dibalik",
+              "Jawaban AND yang dibalik",
+              "Harus semuanya benar baru hasilnya benar",
+              "Kalau salah satu benar, hasilnya juga benar",
+            ],
+          },
+          {
+            image: "xor_gate.png",
+            question: "Gerbang XOR - Apa ciri-cirinya?",
+            correct: "Menghasilkan 1 jika hanya salah satu input bernilai 1",
+            options: [
+              "Menghasilkan 1 jika hanya salah satu input bernilai 1",
+              "Menghasilkan 1 jika kedua input sama",
+              "Harus semuanya benar baru hasilnya benar",
+              "Kalau salah satu benar, hasilnya juga benar",
+            ],
+          },
+          {
+            image: "xor_soal.png",
+            question: "Gerbang XOR - Input A=1, B=0. Outputnya?",
+            correct: "1 (Benar)",
+            options: [
+              "1 (Benar)",
+              "0 (Salah)",
+              "Tergantung kondisi",
+              "Tidak ada output",
+            ],
+          },
+          {
+            image: "xnor_gate.png",
+            question: "Gerbang XNOR - Apa ciri-cirinya?",
+            correct: "Menghasilkan 1 kalau kedua input sama",
+            options: [
+              "Menghasilkan 1 kalau kedua input sama",
+              "Menghasilkan 1 jika hanya salah satu input bernilai 1",
+              "Harus semuanya benar baru hasilnya benar",
+              "Jawaban XOR yang dibalik",
+            ],
+          },
+          {
+            image: "xnor_soal.png",
+            question: "Gerbang XNOR - Input A=1, B=1. Outputnya?",
+            correct: "1 (Benar)",
+            options: [
+              "1 (Benar)",
+              "0 (Salah)",
+              "Tergantung kondisi",
+              "Tidak ada output",
             ],
           },
         ],

@@ -285,6 +285,9 @@
           <h2>⚡ Gerbang Logika</h2>
           <p>Kenali gerbang logika dasar</p>
         </button>
+        <button class="menu-btn" onclick="startGame('gmail_drive')">
+          📧 Gmail & Drive
+        </button>
       </div>
 
       <div id="gameArea" class="game-area">
@@ -782,6 +785,128 @@
             ],
           },
         ],
+        gmail_drive: [
+          {
+            image: "gmail.png",
+            question: "Apa kegunaan Gmail?",
+            correct:
+              "Untuk mengirim dan menerima pesan secara cepat melalui internet",
+            options: [
+              "Untuk mengirim dan menerima pesan secara cepat melalui internet",
+              "Untuk menyimpan file secara online",
+              "Untuk mengedit dokumen",
+              "Untuk browsing internet",
+            ],
+          },
+          {
+            image: "gmail.png",
+            question:
+              "Apakah Gmail di HP dan laptop bersambung jika akunnya sama?",
+            correct: "Ya, bersambung karena menggunakan akun yang sama",
+            options: [
+              "Ya, bersambung karena menggunakan akun yang sama",
+              "Tidak, harus login terpisah",
+              "Hanya di HP saja",
+              "Hanya di laptop saja",
+            ],
+          },
+          {
+            image: "gmail.png",
+            question: "Kalau mau kirim email, klik tombol apa?",
+            correct: "Tulis",
+            options: ["Tulis", "Kirim", "Buat", "Mulai"],
+          },
+          {
+            image: "gmail.png",
+            question: "Kotak Masuk isinya apa?",
+            correct: "Semua pesan yang diterima di Gmail",
+            options: [
+              "Semua pesan yang diterima di Gmail",
+              "Semua pesan yang dikirim",
+              "Semua pesan yang dihapus",
+              "Semua pesan draft",
+            ],
+          },
+          {
+            image: "gmail.png",
+            question: "Halaman Terkirim maksudnya apa?",
+            correct: "Semua pesan yang berhasil dikirim",
+            options: [
+              "Semua pesan yang berhasil dikirim",
+              "Semua pesan yang diterima",
+              "Semua pesan yang belum dikirim",
+              "Semua pesan yang dihapus",
+            ],
+          },
+          {
+            image: "gmail.png",
+            question: "Ketika kirim Gmail, isinya apa saja?",
+            correct: "Kepada, Subjek, Body",
+            options: [
+              "Kepada, Subjek, Body",
+              "Nama, Alamat, Pesan",
+              "Judul, Isi, Lampiran",
+              "Dari, Ke, Tanggal",
+            ],
+          },
+          {
+            image: "gmail.png",
+            question: "Urutan penulisan email yang sopan tahapannya bagaimana?",
+            correct: "Salam pembuka, Perkenalan singkat, Isi, Penutup",
+            options: [
+              "Salam pembuka, Perkenalan singkat, Isi, Penutup",
+              "Isi, Salam, Penutup, Perkenalan",
+              "Perkenalan, Isi, Salam, Penutup",
+              "Penutup, Isi, Salam, Perkenalan",
+            ],
+          },
+          {
+            image: "drive.png",
+            question: "Google Drive itu apa?",
+            correct:
+              "Tempat penyimpanan online untuk menyimpan, mengedit, dan berbagi file",
+            options: [
+              "Tempat penyimpanan online untuk menyimpan, mengedit, dan berbagi file",
+              "Aplikasi untuk mengirim email",
+              "Aplikasi untuk browsing internet",
+              "Aplikasi untuk edit foto",
+            ],
+          },
+          {
+            image: "drive.png",
+            question: "Apakah Google Drive bisa diakses banyak orang?",
+            correct: "Ya, jika pengguna mengizinkan",
+            options: [
+              "Ya, jika pengguna mengizinkan",
+              "Tidak, hanya pemilik saja",
+              "Ya, semua orang bisa akses otomatis",
+              "Tidak, harus bayar dulu",
+            ],
+          },
+          {
+            image: "drive.png",
+            question: "Pengguna bisa mengizinkan akses berupa apa saja?",
+            correct: "Editor dan Perlihat",
+            options: [
+              "Editor dan Perlihat",
+              "Tulis dan Hapus",
+              "Baca dan Kirim",
+              "Upload dan Download",
+            ],
+          },
+          {
+            image: "drive.png",
+            question: "Maksud dari izin 'Editor' itu bagaimana?",
+            correct:
+              "Pengguna lain bisa mengupload dan mengedit file di Drive kita",
+            options: [
+              "Pengguna lain bisa mengupload dan mengedit file di Drive kita",
+              "Pengguna lain hanya bisa melihat file saja",
+              "Pengguna lain bisa menghapus akun kita",
+              "Pengguna lain tidak bisa akses sama sekali",
+            ],
+          },
+        ],
       };
 
       let currentCategory = "";
@@ -808,7 +933,6 @@
         answered = false;
         const question = currentQuestions[currentQuestionIndex];
 
-        // tampilkan gambar
         document.getElementById("questionImg").src = question.image;
         document.getElementById("questionText").textContent = question.question;
         document.getElementById("nextBtn").style.display = "none";
